@@ -6,18 +6,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-const useStyles = makeStyles({
-    taskDone: {
-        color: 'green',
-    },
-
-    taskList: {
-        width: '600px',
-        margin: '0 auto',
-    }
-});
+import useStyles from "./UseStyles";
 
 const TodoList = ({ todos, deleteTodo }) => {
     const classes = useStyles();
